@@ -1,0 +1,215 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div style="display: none;">
+        <style>
+            body{
+                background-color: rgb(229, 240, 243);
+                background: linear-gradient(45deg, red 40%,blue);
+            }
+            table{
+                width: 50%;
+                border-collapse: collapse;
+            }
+            td,th{
+                border: 2px solid rgb(8, 182, 46);
+                padding: 8px;
+                text-align: left;
+            }
+            ul{
+                list-style-type: circle;
+            }
+            #p1{
+                border: 2px solid rgb(139, 160, 231);
+                text-align: center;
+            }
+            .names{
+                color black;
+                background-color: rgb(26, 250, 71);
+            }
+            .Myboxes{
+                border: 2px solid blue; 
+                /*padding: 5%; */
+                /*padding-left: 45%*/;
+               /*width: 50px;*/
+               /*height: 50px;*/
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                align-items: inherit;
+            }
+            .outboxe{
+                display: flex;
+                flex-direction: row;
+                border: 10px solid rgb(214, 220, 226) ;
+                /*padding: 2%;*/
+                background-color: rgb(149, 165, 214); 
+                margin: 10%;
+            }
+            .innerboxes{
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                padding: 2px;
+                border: 2px solid rgb(248, 249, 252);
+            }
+            .borderC{
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                border: 2px solid rgb(202, 21, 21);
+                justify-content: center;
+            }
+            p::before{
+                content: "welcome";
+            }
+        </style>
+        <p id="p1">This is the the form fill for car who ru Interesting</p>
+        <from>
+            <h1>Signup Form Car</h1>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter you name">
+            <br>
+            <br>
+            <label for="Email ">Email ID</label>
+            <input type="text" placeholder="Enter your Email ID">
+            <br>
+            <br>
+            <label for="Gender">Gender</label>
+            <input type="radio" value="M" name="g">
+            <label for="Male">Male</label>
+            <input type="radio" value="F" name="g">
+            <label for="Female">Female</label>
+            <input type="radio" value="Others" name="g">
+            <label for="Others">Others</label>
+            <br>
+            <br>
+            <label for="Car Brands">Car Brands</label>
+            <select> 
+                <option value="-Select-">-Select-</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+            <br>
+            <br>
+            <label for="Age"> Age </label>
+            <input type="number" placeholder="Enter your age">
+            <br>
+            <br>
+            <label for="DOB"> DOB </label>
+            <input type="date">
+            <br>
+            <br>
+            <label for="Password"> Password </label>
+            <input type="password" placeholder="Enter Password">
+            <input type="submit">
+            <a href="https://www.facebook.com/"> Take to facebook Login page</a>
+            <br>
+            <br>
+            <label>Comments</label>
+            <br>
+            <br>
+            <textarea rows="5" cols="10"></textarea>
+            <input type="submit">
+            </from>
+            <br>
+            <br>
+            <table>
+                <thead></thead>
+                <tbody></tbody>
+                <tr>
+                    <th style="background-color: rgb(88, 202, 255);"> user name </th>
+                    <th style="background-color: rgb(88, 202, 255);">Age</th>
+                    <th style="background-color: rgb(88, 202, 255);">List of songs</th>
+                    <th style="background-color: rgb(88, 202, 255);">Name of song's movie</th>
+                </tr>
+                <tr>
+                    <td class="names">Rizwankhan</td>
+                    <td>24</td>
+                    <td>Tum hi ho</td>
+                    <td>Zid</td>                    
+                </tr>
+                <tr>
+                    <td class="names">Rizwankhan</td>
+                    <td>24</td>
+                    <td>Tum hi ho</td>
+                    <td>Zid</td>                    
+                </tr>
+                <tr>
+                    <td class="names">Rizwankhan</td>
+                    <td>24</td>
+                    <td>Tum hi ho</td>
+                    <td>Zid</td>                    
+                </tr>
+                <tr>
+                    <td>Rizwankhan</td>
+                    <td>24</td>
+                    <td>Tum hi ho</td>
+                    <td>Zid</td>                    
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h2> Order List</h2>
+            <ol>
+                <li> khan</li>
+                <li> rizwankhan</li>
+                <li> wjgsd</li>
+                <li> sam</li>
+            </ol>
+            <br>
+            <br>
+            <h2> Un-Order List</h2>
+            <ul>
+                <li> khan</li>
+                <li> rizwankhan</li>
+                <li> wjgsd</li>
+                <li> sam</li>
+            </ul>
+            <h2>Nested List</h2>  
+                <ol>
+                    <li> jk rowling
+                         <ul>
+                            <li>Philosopher stone</li>
+                            <li>Chamber of Secrets</li>
+                            <li>Goblet of fire</li>
+                        </ul>                   
+                    </li>
+                </ol>
+            <div style="display: none;">
+        </div>
+            <div style="border: 10px solid rgb(5, 209, 141); padding: 20%;background-color: rebeccapurple;margin: 10%;" >
+            This an element which is going to from the using the block type element whic is goinng to done one side which taken the follow the register procedure   
+        </div>
+        </div>
+        <div class="outboxe">
+            <div class="innerboxes">
+            <div class="Myboxes" style="flex-direction: column;">
+                <div class="borderC">
+                    <h1>1</h1>
+                </div>
+                <div class="borderC">
+                    <h1>2</h1>
+                </div>
+            </div>
+
+             <div class="Myboxes">
+                 <h1>50%</h1>
+             </div>  
+            </div>
+           
+           <div class="innerboxes">
+            <div class="Myboxes" style="flex: 3;">
+                <h1>30%</h1>
+           </div>
+           <div class="Myboxes" style="flex: 7;">
+               <h1>70%</h1>
+               <p>This to info to flex box is use to for only for black element</p>
+           </div> 
+           </div>                  
+    </body>
+</html>
